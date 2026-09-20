@@ -31,7 +31,7 @@ export const TEMPLATES_DATA: Template[] = [
       'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80'
     ],
-    demoUrl: 'http://localhost:3001',
+    demoUrl: 'https://car2hand.arthy001.workers.dev',
     githubUrl: 'https://github.com/Arthy001/car2hand',
     keyFeatures: [
       '⚡ Next.js 15 App Router & Server Components ประสิทธิภาพสูง โหลดเร็วระดับเสี้ยววินาที',
