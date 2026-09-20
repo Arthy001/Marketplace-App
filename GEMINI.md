@@ -23,7 +23,7 @@
 - **Typography**: Plus Jakarta Sans & Noto Sans Thai
 - **Design Concept**: Minimalist, clean editorial dark theme (`#090a0f`)
 - **Default Port**: 3000 (`http://localhost:3000`)
-- **Deployment**: Cloudflare Pages / Vercel ready
+- **Deployment**: Cloudflare Pages ready (Node 22 / static export)
 
 ---
 

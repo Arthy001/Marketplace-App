@@ -14,7 +14,7 @@ export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
           {/* Status tag */}
           <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-md bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs mb-6">
             <span className="w-2 h-2 rounded-full bg-emerald-400" />
-            <span className="font-medium">Car4U v1.2 พร้อมส่งมอบ (Available Now)</span>
+            <span className="font-medium">Car2Hand v1.2 พร้อมส่งมอบ (Available Now)</span>
           </div>
 
           {/* Heading */}

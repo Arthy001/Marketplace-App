@@ -2,12 +2,12 @@ import { Template } from '@/types';
 
 export const TEMPLATES_DATA: Template[] = [
   {
-    id: 'car4u',
-    slug: 'car4u',
-    title: 'Car4U - Used Car Marketplace & Automotive Sales Platform',
+    id: 'car2hand',
+    slug: 'car2hand',
+    title: 'Car2Hand - Used Car Marketplace & Automotive Sales Platform',
     tagline: 'ระบบซื้อ-ขายและเช่ารถยนต์มือสองระดับพรีเมียม สไตล์ modern luxury พร้อม Supabase & Next.js 15',
     description: 'เทมเพลตและซอร์สโค้ดระบบตลาดรถยนต์มือสองแบบครบวงจร มีระบบค้นหาและกรองละเอียด (EV, Sedan, SUV ฯลฯ), ระบบคำนวณสินเชื่อ/ค่างวดรถ, นัดหมายทดลองขับ, รองรับ 2 ภาษา TH/EN และแปลงสกุลเงินอัตโนมัติ',
-    detailedDescription: `Car4U เป็นแอปพลิเคชันเว็บระดับโปรดักชันที่พัฒนาด้วย Next.js 15 (App Router), TypeScript, Tailwind CSS และระบบฐานข้อมูล Supabase PostgreSQL เหมาะอย่างยิ่งสำหรับเต็นท์รถยนต์, ธุรกิจเช่ารถ, หรือสตาร์ตอัปที่ต้องการเปิดแพลตฟอร์มตลาดรถยนต์มือสองออนไลน์ในทันที
+    detailedDescription: `Car2Hand เป็นแอปพลิเคชันเว็บระดับโปรดักชันที่พัฒนาด้วย Next.js 15 (App Router), TypeScript, Tailwind CSS และระบบฐานข้อมูล Supabase PostgreSQL เหมาะอย่างยิ่งสำหรับเต็นท์รถยนต์, ธุรกิจเช่ารถ, หรือสตาร์ตอัปที่ต้องการเปิดแพลตฟอร์มตลาดรถยนต์มือสองออนไลน์ในทันที
 
 โครงสร้างโค้ดถูกออกแบบตามหลัก Clean Architecture พร้อมระบบ Fallback เป็น Mock Data คุณภาพสูง 28 คัน ทำให้สามารถรันและพรีวิวได้ทันทีแม้ยังไม่ได้เชื่อมต่อฐานข้อมูล หรือเชื่อมต่อ Supabase ได้ในเวลาเพียง 2 นาทีด้วยไฟล์ SQL schema & seed ที่เตรียมไว้ให้อย่างครบถ้วน`,
     category: 'automotive',
@@ -32,7 +32,7 @@ export const TEMPLATES_DATA: Template[] = [
       'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80'
     ],
     demoUrl: 'http://localhost:3001',
-    githubUrl: 'https://github.com/Arthy001/car4you',
+    githubUrl: 'https://github.com/Arthy001/car2hand',
     keyFeatures: [
       '⚡ Next.js 15 App Router & Server Components ประสิทธิภาพสูง โหลดเร็วระดับเสี้ยววินาที',
       '🌐 Bilingual Support (TH / EN) สลับภาษาได้ทันที พร้อมคำนวณเรทแปลงสกุลเงิน THB ⇄ USD อัตโนมัติ',

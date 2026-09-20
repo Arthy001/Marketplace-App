@@ -22,8 +22,8 @@ export default function Footer() {
 
           {/* Links */}
           <div className="flex flex-wrap items-center gap-6 text-zinc-400 font-mono text-xs">
-            <Link href="/templates/car4u" className="hover:text-white transition-colors">
-              car4u
+            <Link href="/templates/car2hand" className="hover:text-white transition-colors">
+              car2hand
             </Link>
             <Link href="/#standards" className="hover:text-white transition-colors">
               standards
