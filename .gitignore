@@ -24,14 +24,23 @@
 .DS_Store
 *.pem
 
-# debug
+# debug & logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+*.log
+*.tmp
 
-# env files (can opt-in for committing if needed)
+# env & secrets
 .env*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+*credentials*
+service-account*.json
 
 # vercel
 .vercel
@@ -40,8 +49,33 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# cloudflare & workers
+.wrangler/
+.wrangler
+.mf/
+
+# ide & ai agent tools
+.vscode/
+.idea/
+.gemini/
+.cursor/
+.claude/
+*.swp
+*~
+
+# os files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
 # deployment & migration docs
 CLOUDFLARE_DEPLOYMENT.md
 PROJECT_MIGRATION_PLAN.md
+PROJECTS_DIRECTORY.md
+
+
+
 
 
