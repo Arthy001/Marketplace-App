@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# deployment & migration docs
+CLOUDFLARE_DEPLOYMENT.md
+PROJECT_MIGRATION_PLAN.md
+
+
