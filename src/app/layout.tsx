@@ -16,16 +16,17 @@ const notoSansThai = Noto_Sans_Thai({
   display: 'swap',
 });
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://marketplace-apps.pages.dev';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://primenexttech.solutions';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'Marketplace-Apps Hub | Production-Ready Web Application Templates & Source Code',
-    template: '%s | Marketplace-Apps Hub',
+    default: 'PRIME NEXT TECH & SOLUTIONS | Enterprise Web Applications & Source Code',
+    template: '%s | PRIME NEXT TECH & SOLUTIONS',
   },
-  description: 'ศูนย์รวมซอร์สโค้ดและเว็บแอปพลิเคชันเทมเพลตระดับโปรดักชัน พัฒนาด้วย Next.js 15, TypeScript, Tailwind CSS และ Supabase พร้อมส่งมอบและเปิดตัวธุรกิจได้ทันที',
+  description: 'ศูนย์รวมซอร์สโค้ดและเว็บแอปพลิเคชันเทมเพลตระดับโปรดักชัน พัฒนาด้วย Next.js 15, TypeScript, Tailwind CSS และ Supabase พร้อมส่งมอบและเปิดตัวธุรกิจได้ทันที โดย PRIME NEXT TECH & SOLUTIONS',
   keywords: [
+    'PRIME NEXT TECH & SOLUTIONS',
     'Next.js 15 template',
     'Supabase source code',
     'Car marketplace template',
@@ -34,23 +35,23 @@ export const metadata: Metadata = {
     'ระบบตลาดรถยนต์มือสอง Next.js',
     'ซื้อขายซอร์สโค้ดเว็บแอป'
   ],
-  authors: [{ name: 'Marketplace-Apps' }],
-  creator: 'Marketplace-Apps',
-  publisher: 'Marketplace-Apps',
+  authors: [{ name: 'PRIME NEXT TECH & SOLUTIONS' }],
+  creator: 'PRIME NEXT TECH & SOLUTIONS',
+  publisher: 'PRIME NEXT TECH & SOLUTIONS',
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Marketplace-Apps Hub | Production-Ready Web Application Templates',
-    description: 'ศูนย์รวมซอร์สโค้ดและเว็บแอปพลิเคชันเทมเพลตระดับโปรดักชัน พร้อมส่งมอบและเปิดตัวธุรกิจได้ทันที',
+    title: 'PRIME NEXT TECH & SOLUTIONS | Production-Ready Web Applications',
+    description: 'ศูนย์รวมซอร์สโค้ดและเว็บแอปพลิเคชันเทมเพลตระดับโปรดักชัน พร้อมส่งมอบและเปิดตัวธุรกิจได้ทันที โดย PRIME NEXT TECH & SOLUTIONS',
     url: BASE_URL,
-    siteName: 'Marketplace-Apps Hub',
+    siteName: 'PRIME NEXT TECH & SOLUTIONS',
     locale: 'th_TH',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Marketplace-Apps Hub | Production-Ready Web Templates',
+    title: 'PRIME NEXT TECH & SOLUTIONS | Production-Ready Web Templates',
     description: 'ศูนย์รวมซอร์สโค้ดและเว็บแอปพลิเคชันเทมเพลตระดับโปรดักชัน Next.js 15 & Supabase',
   },
   robots: {

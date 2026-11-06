@@ -97,7 +97,7 @@ export default async function TemplateDetailPage({ params }: PageProps) {
     },
     author: {
       '@type': 'Organization',
-      name: 'Marketplace-Apps Hub',
+      name: 'PRIME NEXT TECH & SOLUTIONS',
     },
   };
 

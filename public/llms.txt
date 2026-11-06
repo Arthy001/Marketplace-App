@@ -1,49 +1,29 @@
-# Marketplace-Apps Hub
+# PRIME NEXT TECH & SOLUTIONS
 
-> Marketplace-Apps Hub is a commercial platform providing production-grade full-stack web application templates and source code built with Next.js 15, TypeScript, Tailwind CSS, and Supabase PostgreSQL.
+> PRIME NEXT TECH & SOLUTIONS คือบริษัทผู้พัฒนาเว็บแอปพลิเคชัน ซอฟต์แวร์บริหารองค์กร และผู้ให้บริการซอร์สโค้ดระดับโปรดักชัน Next.js 15, TypeScript, Tailwind CSS และ Supabase
 
-## Available Application Templates & Source Code
+PRIME NEXT TECH & SOLUTIONS ให้บริการทั้งแอปพลิเคชันพร้อมใช้งาน (Ready-to-Deploy Applications) และโซลูชันองค์กร (Enterprise ERP Solutions)
 
-### 1. Car2Hand - Used Car Marketplace & Automotive Sales Platform
-- **Slug**: car2hand
-- **Status**: Available Now (v1.2.0)
-- **Framework & Stack**: Next.js 15 (App Router), React 19, Strict TypeScript, Tailwind CSS v4, Supabase (PostgreSQL), Lucide Icons
-- **Pricing**:
-  - Standard License: ฿4,900 THB ($149 USD) - Single project / 1 end product
-  - Extended License: ฿12,900 THB ($389 USD) - Unlimited commercial projects & client work
-- **Key Features**:
-  - Bilingual support (Thai and English) with real-time THB / USD currency converter
-  - Smart vehicle search and advanced filtering (EV, Sedan, SUV, Luxury, Van, Price Range, Year)
-  - Real-time loan & monthly payment financing calculator
-  - Test drive and vehicle booking scheduling modal
-  - Comprehensive vehicle detail pages with gallery and mechanical specifications
-  - Supabase PostgreSQL schema with 28 realistic car models pre-seeded
-  - Zero-config offline fallback mode: runs completely without database setup
-- **Live Demo**: https://car2hand.arthy001.workers.dev
-- **GitHub Repository**: https://github.com/Arthy001/car2hand
+## Applications & Source Code
 
-### 2. EstateSphere - Luxury Real Estate & Villa Portal
-- **Slug": estatesphere
-- **Status**: Coming Soon (v1.0.0)
-- **Framework & Stack**: Next.js 15, React 19, TypeScript, MapLibre GL, Supabase
-- **Target Audience**: Real estate agencies, luxury villa rentals, condo developers
+- [Car2Hand - Used Car Marketplace](https://primenexttech.solutions/templates/car2hand): แพลตฟอร์มตลาดซื้อ-ขายรถยนต์มือสอง Next.js 15, Supabase, ระบบคำนวณสินเชื่อ, ฟิลเตอร์ EV, รองรับ 2 ภาษา TH/EN (ราคา ฿4,900 / ฿12,900)
+- [EstateSphere - Luxury Real Estate](https://primenexttech.solutions/templates/estatesphere): แพลตฟอร์มซื้อขายอสังหาริมทรัพย์และพูลวิลล่าหรู พร้อมระบบ Virtual Tour & MapLibre
+- [NovaShop - E-Commerce Platform](https://primenexttech.solutions/templates/novashop): ระบบร้านค้าออนไลน์และจัดการคำสั่งซื้อแบบโมเดิร์น
+- [Luxestay - Booking SaaS](https://primenexttech.solutions/templates/luxestay): ระบบบริหารการจองห้องพักและโรงแรมระดับพรีเมียม
 
-### 3. SwiftCart Pro - Headless E-Commerce & POS
-- **Slug**: swiftcart-pro
-- **Status**: In Development
-- **Framework & Stack**: Next.js 15, Stripe, PromptPay QR, Supabase, Tailwind CSS v4
+## Enterprise Solutions
 
-### 4. ClinicBook - Appointment & Clinic Management SaaS
-- **Slug**: clinicbook
-- **Status**: In Development
-- **Framework & Stack**: Next.js 15, FullCalendar, Supabase Auth, PostgreSQL
+- [PrimeERP Suite](https://erp.primenexttech.solutions): ระบบบริหารจัดการองค์กรแบบครบวงจร (ERP) จัดการคลังสินค้า บัญชี จัดซื้อ และบุคลากรแบบ Real-time
+- [Custom Software Development](https://primenexttech.solutions/#solutions): บริการออกแบบและพัฒนาเว็บแอปพลิเคชันเฉพาะทางตามความต้องการของธุรกิจ
+- [Cloud & Security Infrastructure](https://primenexttech.solutions/#solutions): วางโครงสร้างคลาวด์ความปลอดภัยสูงบน Cloudflare Workers และ Supabase
 
-## Technical Standard
-- All templates are built with 100% TypeScript Strict Mode.
-- Fully responsive on mobile, tablet, and desktop devices.
-- Includes clean database schema SQL files and documentation guides.
-- Delivered with full uncompiled source code.
+## Knowledge & Documentation
 
-## Contact & Purchase
-- Line ID: @artydev
-- Official Website: https://marketplace-apps.pages.dev
+- [Articles & Insights](https://primenexttech.solutions/#articles): บทความ สาระน่ารู้ และสถาปัตยกรรมซอฟต์แวร์สำหรับธุรกิจยุคใหม่
+- [Sitemap](https://primenexttech.solutions/sitemap.xml): แผนผังเว็บไซต์สำหรับค้นหาทรัพยากรทั้งหมด
+- [Official Website](https://primenexttech.solutions): หน้าแรกของ PRIME NEXT TECH & SOLUTIONS
+
+## Optional
+
+- [Car2Hand Live Demo](https://car2hand.arthy001.workers.dev): ตัวอย่างหน้าเว็บระบบตลาดรถยนต์มือสองที่รันจริง
+- [PrimeERP Live Demo](https://erp.primenexttech.solutions): ตัวอย่างระบบ ERP บริหารองค์กรทดลองใช้งาน

@@ -2,7 +2,8 @@ import { type SchemaTypeDefinition } from 'sanity';
 import { templateType } from './templateType';
 import { faqType } from './faqType';
 import { categoryType } from './categoryType';
+import { articleType } from './articleType';
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [templateType, faqType, categoryType],
+  types: [templateType, faqType, categoryType, articleType],
 };

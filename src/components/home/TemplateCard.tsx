@@ -7,13 +7,12 @@ import { ArrowUpRight, ArrowRight } from 'lucide-react';
 
 interface TemplateCardProps {
   template: Template;
-  currency: 'THB' | 'USD';
   onQuickInquire?: (template: Template) => void;
 }
 
-export default function TemplateCard({ template, currency }: TemplateCardProps) {
+export default function TemplateCard({ template }: TemplateCardProps) {
   const isAvailable = template.status === 'available';
-  const price = currency === 'THB' ? `฿${template.priceStandardTHB.toLocaleString()}` : `$${template.priceStandardUSD}`;
+  const price = `฿${template.priceStandardTHB.toLocaleString()}`;
 
   return (
     <div className="minimal-card rounded-2xl overflow-hidden flex flex-col group transition-colors">

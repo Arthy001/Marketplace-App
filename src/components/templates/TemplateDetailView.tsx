@@ -20,7 +20,6 @@ interface TemplateDetailViewProps {
 }
 
 export default function TemplateDetailView({ template }: TemplateDetailViewProps) {
-  const [currency, setCurrency] = useState<'THB' | 'USD'>('THB');
   const [selectedImage, setSelectedImage] = useState<number>(0);
   const [selectedLicense, setSelectedLicense] = useState<'standard' | 'extended'>('standard');
   const [isInquiryOpen, setIsInquiryOpen] = useState(false);
@@ -31,14 +30,12 @@ export default function TemplateDetailView({ template }: TemplateDetailViewProps
 
   const isAvailable = template.status === 'available';
   const price = selectedLicense === 'standard'
-    ? (currency === 'THB' ? `฿${template.priceStandardTHB.toLocaleString()}` : `$${template.priceStandardUSD}`)
-    : (currency === 'THB' ? `฿${template.priceExtendedTHB.toLocaleString()}` : `$${template.priceExtendedUSD}`);
+    ? `฿${template.priceStandardTHB.toLocaleString()}`
+    : `฿${template.priceExtendedTHB.toLocaleString()}`;
 
   return (
     <div className="min-h-screen flex flex-col bg-zinc-50 dark:bg-[#090a0f] text-zinc-900 dark:text-zinc-100 font-sans transition-colors">
       <Navbar
-        currency={currency}
-        onToggleCurrency={() => setCurrency(currency === 'THB' ? 'USD' : 'THB')}
         onOpenInquiry={() => setIsInquiryOpen(true)}
       />
 
@@ -131,6 +128,7 @@ export default function TemplateDetailView({ template }: TemplateDetailViewProps
                       <button
                         key={idx}
                         onClick={() => setSelectedImage(idx)}
+                        aria-label={`เลือกดูรูปภาพที่ ${idx + 1}`}
                         className={`aspect-[16/10] rounded-lg overflow-hidden border transition-all cursor-pointer ${
                           selectedImage === idx
                             ? 'border-zinc-950 dark:border-white shadow-xs'
@@ -355,7 +353,6 @@ export default function TemplateDetailView({ template }: TemplateDetailViewProps
         onClose={() => setIsInquiryOpen(false)}
         selectedTemplate={template}
         selectedLicense={selectedLicense}
-        currency={currency}
       />
     </div>
   );

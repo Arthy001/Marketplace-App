@@ -2,11 +2,7 @@ import React from 'react';
 import { LICENSE_TIERS } from '@/lib/data/templates';
 import { Check } from 'lucide-react';
 
-interface PricingSectionProps {
-  onOpenInquiry?: (licenseType: 'standard' | 'extended') => void;
-}
-
-export default function PricingSection({ onOpenInquiry }: PricingSectionProps) {
+export default function PricingSection() {
   return (
     <section id="licensing" className="py-20 border-b border-zinc-200 dark:border-white/[0.08] transition-colors">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
@@ -48,12 +44,12 @@ export default function PricingSection({ onOpenInquiry }: PricingSectionProps) {
             </div>
 
             <div className="pt-8 mt-6 border-t border-zinc-200 dark:border-white/[0.08] transition-colors">
-              <button
-                onClick={() => onOpenInquiry && onOpenInquiry('standard')}
-                className="w-full py-3 rounded-xl text-sm font-bold text-zinc-800 dark:text-zinc-200 bg-zinc-100 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 border border-zinc-300 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-700 transition-all cursor-pointer"
+              <a
+                href="#templates"
+                className="w-full py-3 rounded-xl text-sm font-bold text-zinc-800 dark:text-zinc-200 bg-zinc-100 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 border border-zinc-300 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-700 transition-all cursor-pointer block text-center"
               >
-                สั่งซื้อ / สอบถาม Standard License
-              </button>
+                เลือกแอปพลิเคชันเพื่อสั่งซื้อ (Standard)
+              </a>
             </div>
           </div>
 
@@ -83,12 +79,12 @@ export default function PricingSection({ onOpenInquiry }: PricingSectionProps) {
             </div>
 
             <div className="pt-8 mt-6 border-t border-zinc-200 dark:border-white/[0.08] transition-colors">
-              <button
-                onClick={() => onOpenInquiry && onOpenInquiry('extended')}
-                className="w-full py-3 rounded-xl text-sm font-bold bg-zinc-950 text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200 transition-all cursor-pointer shadow-md"
+              <a
+                href="#templates"
+                className="w-full py-3 rounded-xl text-sm font-bold bg-zinc-950 text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200 transition-all cursor-pointer shadow-md block text-center"
               >
-                สั่งซื้อ / สอบถาม Extended License
-              </button>
+                เลือกแอปพลิเคชันเพื่อสั่งซื้อ (Extended)
+              </a>
             </div>
           </div>
 

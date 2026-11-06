@@ -9,7 +9,6 @@ interface InquiryModalProps {
   onClose: () => void;
   selectedTemplate?: Template | null;
   selectedLicense?: 'standard' | 'extended';
-  currency: 'THB' | 'USD';
 }
 
 export default function InquiryModal({
@@ -46,6 +45,7 @@ export default function InquiryModal({
         {/* Close Button */}
         <button
           onClick={onClose}
+          aria-label="ปิดหน้าต่างสอบถามข้อมูล"
           className="absolute top-4 right-4 p-1.5 rounded-lg text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
         >
           <X className="w-4 h-4" />

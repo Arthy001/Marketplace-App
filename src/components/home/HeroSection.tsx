@@ -1,11 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
-interface HeroSectionProps {
-  onOpenInquiry?: () => void;
-}
-
-export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
+export default function HeroSection() {
   return (
     <section className="relative pt-16 pb-16 md:pt-24 md:pb-22 border-b border-zinc-200 dark:border-white/[0.08] transition-colors">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
@@ -37,12 +33,12 @@ export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
               <ArrowRight className="w-4 h-4" />
             </a>
 
-            <button
-              onClick={onOpenInquiry}
+            <a
+              href="#solutions"
               className="px-5 py-3 rounded-xl text-sm font-semibold text-zinc-800 dark:text-zinc-200 bg-zinc-100 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all cursor-pointer"
             >
-              ติดต่อสั่งซื้อ / สอบถามบริการ
-            </button>
+              ดูโซลูชันองค์กร & ERP
+            </a>
           </div>
         </div>
 

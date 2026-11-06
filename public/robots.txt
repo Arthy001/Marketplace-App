@@ -23,4 +23,4 @@ User-agent: Google-Extended
 Allow: /
 Disallow: /studio/
 
-Sitemap: https://marketplace-apps.pages.dev/sitemap.xml
+Sitemap: https://primenexttech.solutions/sitemap.xml

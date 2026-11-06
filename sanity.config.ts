@@ -8,7 +8,7 @@ import { schema } from './src/sanity/schemaTypes';
 export default defineConfig({
   basePath: '/studio',
   name: 'default',
-  title: 'Marketplace Apps Studio',
+  title: 'PRIME NEXT TECH Studio',
   projectId,
   dataset,
   schema,
