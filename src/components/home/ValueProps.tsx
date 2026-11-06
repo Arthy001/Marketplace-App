@@ -25,14 +25,14 @@ export default function ValueProps() {
   ];
 
   return (
-    <section id="standards" className="py-20 border-b border-white/[0.08]">
+    <section id="standards" className="py-20 border-b border-zinc-200 dark:border-white/[0.08] transition-colors">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         
         <div className="mb-14 max-w-2xl">
-          <div className="text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2">
+          <div className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">
             Engineering Standards
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white transition-colors">
             ออกแบบโครงสร้างโค้ดอย่างมีมาตรฐาน สำหรับนักพัฒนาและเจ้าของธุรกิจ
           </h2>
         </div>
@@ -40,11 +40,11 @@ export default function ValueProps() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {standards.map((item, idx) => (
             <div key={idx} className="space-y-3">
-              <div className="font-mono text-sm text-zinc-500 font-bold">{item.num}</div>
-              <h3 className="text-base font-bold text-white">
+              <div className="font-mono text-sm text-zinc-400 dark:text-zinc-500 font-bold">{item.num}</div>
+              <h3 className="text-base font-bold text-zinc-900 dark:text-white transition-colors">
                 {item.title}
               </h3>
-              <p className="text-sm text-zinc-400 leading-relaxed font-normal">
+              <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal transition-colors">
                 {item.description}
               </p>
             </div>

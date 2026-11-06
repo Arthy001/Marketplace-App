@@ -17,7 +17,7 @@ export default function CategoryTabs({ selectedCategory, onSelectCategory, count
   ];
 
   return (
-    <div className="flex items-center gap-1.5 overflow-x-auto pb-2 border-b border-white/[0.06]">
+    <div className="flex items-center gap-1.5 overflow-x-auto pb-2 border-b border-zinc-200 dark:border-white/[0.06] transition-colors">
       {categories.map((cat) => {
         const isSelected = selectedCategory === cat.id;
         const count = counts[cat.id] || 0;
@@ -28,8 +28,8 @@ export default function CategoryTabs({ selectedCategory, onSelectCategory, count
             onClick={() => onSelectCategory(cat.id)}
             className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors cursor-pointer flex items-center gap-1.5 ${
               isSelected
-                ? 'bg-zinc-800 text-white font-semibold'
-                : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900'
+                ? 'bg-zinc-900 text-white dark:bg-zinc-800 dark:text-white font-semibold shadow-xs'
+                : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-900'
             }`}
           >
             <span>{cat.label}</span>

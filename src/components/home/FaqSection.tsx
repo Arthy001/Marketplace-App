@@ -12,7 +12,7 @@ export default function FaqSection() {
       a: 'คุณจะได้รับ Uncompiled TypeScript Source Code ทั้งหมด, ไฟล์ Database Schema (.sql) และชุดข้อมูลจำลองสำหรับ Supabase, ระบบสลับภาษา (TH/EN), และเอกสารคู่มือการติดตั้ง (README & Setup Guide) แบบละเอียด'
     },
     {
-      q: 'Car4U สามารถรันแบบ Offline โดยไม่เชื่อมต่อ Supabase ได้ไหม?',
+      q: 'Car2Hand สามารถรันแบบ Offline โดยไม่เชื่อมต่อ Supabase ได้ไหม?',
       a: 'ได้แน่นอนครับ ตัวแอปมีระบบ Fallback ในตัวที่จำลองข้อมูลรถยนต์จริง 28 คัน ทำให้สามารถเปิดทดลองรัน, ค้นหา, กรองรถ EV, คำนวณสินเชื่อ, และทดลองจองได้ทันทีโดยไม่ต้องตั้งค่าฐานข้อมูลในครั้งแรก'
     },
     {
@@ -30,15 +30,15 @@ export default function FaqSection() {
       <div className="max-w-4xl mx-auto px-5 sm:px-8">
         
         <div className="mb-12">
-          <div className="text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2">
+          <div className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">
             Frequently Asked Questions
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white transition-colors">
             คำถามที่พบบ่อย (FAQ)
           </h2>
         </div>
 
-        <div className="divide-y divide-white/[0.08] border-y border-white/[0.08]">
+        <div className="divide-y divide-zinc-200 dark:divide-white/[0.08] border-y border-zinc-200 dark:border-white/[0.08] transition-colors">
           {faqs.map((faq, idx) => {
             const isOpen = openIdx === idx;
             return (
@@ -47,15 +47,15 @@ export default function FaqSection() {
                   onClick={() => setOpenIdx(isOpen ? null : idx)}
                   className="w-full text-left flex items-center justify-between gap-4 cursor-pointer group"
                 >
-                  <span className="text-base font-bold text-zinc-200 group-hover:text-white transition-colors">
+                  <span className="text-base font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-950 dark:group-hover:text-white transition-colors">
                     {faq.q}
                   </span>
-                  <span className="text-zinc-400 group-hover:text-zinc-200">
+                  <span className="text-zinc-500 dark:text-zinc-400 group-hover:text-zinc-800 dark:group-hover:text-zinc-200">
                     {isOpen ? <Minus className="w-5 h-5" /> : <Plus className="w-5 h-5" />}
                   </span>
                 </button>
                 {isOpen && (
-                  <div className="mt-3 pr-8 text-sm text-zinc-300 leading-relaxed">
+                  <div className="mt-3 pr-8 text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed transition-colors">
                     {faq.a}
                   </div>
                 )}

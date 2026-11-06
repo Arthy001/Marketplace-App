@@ -61,7 +61,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#090a0f] text-zinc-100 font-sans">
+    <div className="min-h-screen flex flex-col bg-zinc-50 dark:bg-[#090a0f] text-zinc-900 dark:text-zinc-100 font-sans transition-colors">
       
       {/* Top Minimal Navigation */}
       <Navbar
@@ -75,29 +75,29 @@ export default function HomePage() {
         <HeroSection onOpenInquiry={() => handleOpenInquiry()} />
 
         {/* Catalog Section */}
-        <section id="templates" className="py-16 border-b border-white/[0.06]">
+        <section id="templates" className="py-16 border-b border-zinc-200 dark:border-white/[0.06] transition-colors">
           <div className="max-w-6xl mx-auto px-5 sm:px-8">
             
             {/* Header & Search */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
               <div>
-                <h2 className="text-xl font-semibold tracking-tight text-white">
+                <h2 className="text-xl font-semibold tracking-tight text-zinc-900 dark:text-white transition-colors">
                   Available Templates
                 </h2>
-                <p className="text-xs text-zinc-400 mt-0.5">
+                <p className="text-xs text-zinc-600 dark:text-zinc-400 mt-0.5 transition-colors">
                   Production-grade templates with source code and documentation.
                 </p>
               </div>
 
               {/* Minimal Search Input */}
               <div className="relative w-full sm:w-64">
-                <Search className="w-3.5 h-3.5 text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2" />
+                <Search className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2" />
                 <input
                   type="text"
                   placeholder="Filter by name or tech..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-8 pr-3 py-1.5 rounded-lg bg-zinc-900/90 border border-zinc-800 text-white text-xs placeholder:text-zinc-500 focus:outline-none focus:border-zinc-600 transition-all font-mono"
+                  className="w-full pl-8 pr-3 py-1.5 rounded-lg bg-white dark:bg-zinc-900/90 border border-zinc-300 dark:border-zinc-800 text-zinc-900 dark:text-white text-xs placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-zinc-500 dark:focus:border-zinc-600 transition-all font-mono shadow-2xs"
                 />
               </div>
             </div>
@@ -125,13 +125,13 @@ export default function HomePage() {
               </div>
             ) : (
               <div className="minimal-card rounded-xl p-10 text-center max-w-sm mx-auto my-6">
-                <p className="text-xs text-zinc-400 font-mono">No templates matched your query.</p>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">No templates matched your query.</p>
                 <button
                   onClick={() => {
                     setSelectedCategory('all');
                     setSearchQuery('');
                   }}
-                  className="mt-3 px-3 py-1.5 rounded text-xs font-mono text-zinc-300 bg-zinc-900 border border-zinc-800 hover:border-zinc-700"
+                  className="mt-3 px-3 py-1.5 rounded text-xs font-mono text-zinc-700 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 cursor-pointer"
                 >
                   Reset filters
                 </button>

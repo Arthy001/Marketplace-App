@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: var(--font-plus-jakarta), var(--font-noto-thai), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-plus-jakarta: var(--font-plus-jakarta);
@@ -7,9 +9,16 @@
 }
 
 :root {
+  --background: #fafafa;
+  --foreground: #09090b;
+  --muted: #71717a;
+  --border: rgba(0, 0, 0, 0.08);
+}
+
+.dark {
   --background: #090a0f;
   --foreground: #f4f4f5;
-  --muted: #71717a;
+  --muted: #a1a1aa;
   --border: rgba(255, 255, 255, 0.08);
 }
 
@@ -18,8 +27,6 @@ html, body, button, input, textarea, select {
 }
 
 body {
-  background-color: #090a0f;
-  color: #f4f4f5;
   letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,14 +36,28 @@ body {
 
 /* Minimal Card & Surfaces */
 .minimal-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dark .minimal-card {
   background: #0f111a;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  box-shadow: none;
 }
 
 .minimal-card:hover {
+  border-color: rgba(0, 0, 0, 0.16);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.dark .minimal-card:hover {
   border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
+  box-shadow: none;
 }
 
 /* Clean Custom Scrollbar */
@@ -46,14 +67,26 @@ body {
 }
 
 ::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+
+.dark ::-webkit-scrollbar-track {
   background: #090a0f;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
+  background: #d4d4d8;
   border-radius: 4px;
 }
 
+.dark ::-webkit-scrollbar-thumb {
+  background: #27272a;
+}
+
 ::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
   background: #3f3f46;
 }
