@@ -215,6 +215,28 @@ export default function TemplateDetailView({ template }: TemplateDetailViewProps
                 </div>
               </div>
 
+              {/* Quickstart Setup Snippet */}
+              <div className="minimal-card rounded-xl p-6 space-y-3">
+                <div className="flex items-center justify-between">
+                  <h2 className="text-sm font-semibold uppercase tracking-wider text-zinc-900 dark:text-zinc-300 font-mono">
+                    Quickstart Setup (Ready in 2 Mins)
+                  </h2>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">
+                    Zero-Config Fallback
+                  </span>
+                </div>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                  ไม่ต้องรอเชื่อมต่อฐานข้อมูลก็เปิดใช้งานได้ทันที ตัวระบบมี Mock Data ในตัว รันคำสั่ง 3 บรรทัดเริ่มงานได้เลย:
+                </p>
+                <div className="bg-zinc-950 text-zinc-200 p-4 rounded-lg font-mono text-xs overflow-x-auto space-y-1.5 border border-zinc-800">
+                  <div className="text-zinc-500"># 1. Clone repository & install dependencies</div>
+                  <div className="text-emerald-400">$ npm install</div>
+                  <div className="text-zinc-500 pt-1"># 2. Run local development server</div>
+                  <div className="text-emerald-400">$ npm run dev</div>
+                  <div className="text-zinc-500 pt-1"># App will run at http://localhost:3000</div>
+                </div>
+              </div>
+
             </div>
 
             {/* Right Column: Pricing & Purchase Box */}
@@ -290,6 +312,31 @@ export default function TemplateDetailView({ template }: TemplateDetailViewProps
                       <ArrowUpRight className="w-3.5 h-3.5" />
                     </a>
                   )}
+                </div>
+
+                {/* ROI / Business Value Guarantee */}
+                <div className="mt-5 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 space-y-2.5 text-xs transition-colors">
+                  <div className="font-semibold text-zinc-900 dark:text-white flex items-center gap-1.5">
+                    <span>⚡ ความคุ้มค่าทางธุรกิจ (Business Value)</span>
+                  </div>
+                  <ul className="space-y-1.5 text-zinc-600 dark:text-zinc-400">
+                    <li className="flex items-start gap-1.5">
+                      <span className="text-emerald-500 font-bold">✓</span>
+                      <span>ประหยัดเวลาพัฒนา 300+ ชั่วโมง</span>
+                    </li>
+                    <li className="flex items-start gap-1.5">
+                      <span className="text-emerald-500 font-bold">✓</span>
+                      <span>ประหยัดงบจ้างทีม Outsource หลักแสน</span>
+                    </li>
+                    <li className="flex items-start gap-1.5">
+                      <span className="text-emerald-500 font-bold">✓</span>
+                      <span>เปิดตัวธุรกิจได้ทันทีภายใน 48 ชั่วโมง</span>
+                    </li>
+                    <li className="flex items-start gap-1.5">
+                      <span className="text-emerald-500 font-bold">✓</span>
+                      <span>ซัพพอร์ตการติดตั้ง Deploy ครั้งแรกฟรี</span>
+                    </li>
+                  </ul>
                 </div>
 
               </div>

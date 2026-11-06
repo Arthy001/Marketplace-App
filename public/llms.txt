@@ -1,0 +1,49 @@
+# Marketplace-Apps Hub
+
+> Marketplace-Apps Hub is a commercial platform providing production-grade full-stack web application templates and source code built with Next.js 15, TypeScript, Tailwind CSS, and Supabase PostgreSQL.
+
+## Available Application Templates & Source Code
+
+### 1. Car2Hand - Used Car Marketplace & Automotive Sales Platform
+- **Slug**: car2hand
+- **Status**: Available Now (v1.2.0)
+- **Framework & Stack**: Next.js 15 (App Router), React 19, Strict TypeScript, Tailwind CSS v4, Supabase (PostgreSQL), Lucide Icons
+- **Pricing**:
+  - Standard License: ฿4,900 THB ($149 USD) - Single project / 1 end product
+  - Extended License: ฿12,900 THB ($389 USD) - Unlimited commercial projects & client work
+- **Key Features**:
+  - Bilingual support (Thai and English) with real-time THB / USD currency converter
+  - Smart vehicle search and advanced filtering (EV, Sedan, SUV, Luxury, Van, Price Range, Year)
+  - Real-time loan & monthly payment financing calculator
+  - Test drive and vehicle booking scheduling modal
+  - Comprehensive vehicle detail pages with gallery and mechanical specifications
+  - Supabase PostgreSQL schema with 28 realistic car models pre-seeded
+  - Zero-config offline fallback mode: runs completely without database setup
+- **Live Demo**: https://car2hand.arthy001.workers.dev
+- **GitHub Repository**: https://github.com/Arthy001/car2hand
+
+### 2. EstateSphere - Luxury Real Estate & Villa Portal
+- **Slug": estatesphere
+- **Status**: Coming Soon (v1.0.0)
+- **Framework & Stack**: Next.js 15, React 19, TypeScript, MapLibre GL, Supabase
+- **Target Audience**: Real estate agencies, luxury villa rentals, condo developers
+
+### 3. SwiftCart Pro - Headless E-Commerce & POS
+- **Slug**: swiftcart-pro
+- **Status**: In Development
+- **Framework & Stack**: Next.js 15, Stripe, PromptPay QR, Supabase, Tailwind CSS v4
+
+### 4. ClinicBook - Appointment & Clinic Management SaaS
+- **Slug**: clinicbook
+- **Status**: In Development
+- **Framework & Stack**: Next.js 15, FullCalendar, Supabase Auth, PostgreSQL
+
+## Technical Standard
+- All templates are built with 100% TypeScript Strict Mode.
+- Fully responsive on mobile, tablet, and desktop devices.
+- Includes clean database schema SQL files and documentation guides.
+- Delivered with full uncompiled source code.
+
+## Contact & Purchase
+- Line ID: @artydev
+- Official Website: https://marketplace-apps.pages.dev

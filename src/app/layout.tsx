@@ -16,10 +16,47 @@ const notoSansThai = Noto_Sans_Thai({
   display: 'swap',
 });
 
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://marketplace-apps.pages.dev';
+
 export const metadata: Metadata = {
-  title: 'Marketplace-Apps Hub | Production-Ready Web Application Templates & Source Code',
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: 'Marketplace-Apps Hub | Production-Ready Web Application Templates & Source Code',
+    template: '%s | Marketplace-Apps Hub',
+  },
   description: 'ศูนย์รวมซอร์สโค้ดและเว็บแอปพลิเคชันเทมเพลตระดับโปรดักชัน พัฒนาด้วย Next.js 15, TypeScript, Tailwind CSS และ Supabase พร้อมส่งมอบและเปิดตัวธุรกิจได้ทันที',
-  keywords: ['Next.js 15 template', 'Supabase source code', 'Car marketplace template', 'Web app source code for sale', 'TypeScript templates']
+  keywords: [
+    'Next.js 15 template',
+    'Supabase source code',
+    'Car marketplace template',
+    'Web app source code for sale',
+    'TypeScript templates',
+    'ระบบตลาดรถยนต์มือสอง Next.js',
+    'ซื้อขายซอร์สโค้ดเว็บแอป'
+  ],
+  authors: [{ name: 'Marketplace-Apps' }],
+  creator: 'Marketplace-Apps',
+  publisher: 'Marketplace-Apps',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Marketplace-Apps Hub | Production-Ready Web Application Templates',
+    description: 'ศูนย์รวมซอร์สโค้ดและเว็บแอปพลิเคชันเทมเพลตระดับโปรดักชัน พร้อมส่งมอบและเปิดตัวธุรกิจได้ทันที',
+    url: BASE_URL,
+    siteName: 'Marketplace-Apps Hub',
+    locale: 'th_TH',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Marketplace-Apps Hub | Production-Ready Web Templates',
+    description: 'ศูนย์รวมซอร์สโค้ดและเว็บแอปพลิเคชันเทมเพลตระดับโปรดักชัน Next.js 15 & Supabase',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

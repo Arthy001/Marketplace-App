@@ -34,6 +34,9 @@ export default function Footer() {
             <Link href="/#faq" className="hover:text-zinc-950 dark:hover:text-white transition-colors">
               faq
             </Link>
+            <Link href="/studio" className="hover:text-zinc-950 dark:hover:text-white transition-colors text-emerald-600 dark:text-emerald-400 font-semibold">
+              studio / cms
+            </Link>
             <span className="text-zinc-300 dark:text-zinc-600">|</span>
             <span className="text-zinc-600 dark:text-zinc-400">Line: @artydev</span>
           </div>

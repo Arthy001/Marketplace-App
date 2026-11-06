@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+Disallow: /studio/
+Disallow: /api/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /studio/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /studio/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /studio/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /studio/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /studio/
+
+Sitemap: https://marketplace-apps.pages.dev/sitemap.xml
