@@ -2,6 +2,76 @@ import { Template } from '@/types';
 
 export const TEMPLATES_DATA: Template[] = [
   {
+    id: 'prime-erp-suite',
+    slug: 'prime-erp-suite',
+    title: 'Prime ERP Suite - Enterprise Resource Planning & Smart POS',
+    tagline: 'ระบบบริหารจัดการองค์กร ซัพพลายเชน การผลิต และหน้าร้าน POS แบบครบวงจร',
+    description: 'แพลตฟอร์ม ERP ระดับองค์กรที่เชื่อมโยงงานขายหน้าร้าน (Smart POS), คลังสินค้าหลายสาขา (Multi-Warehouse), งานจัดซื้อ, การวางแผนผลิต (MRP & BOM), บัญชีภาษีตามเกณฑ์สรรพากร และระบบบุคคล HR ในระบบเดียว',
+    detailedDescription: `Prime ERP Suite เป็นโซลูชันระบบบริหารจัดการองค์กรระดับโปรดักชันที่พัฒนาด้วย Next.js 15 (App Router), TypeScript, Tailwind CSS และระบบฐานข้อมูล Real-time ออกแบบมาเพื่อธุรกิจไทยที่ต้องการลดความซ้ำซ้อนของข้อมูล และเชื่อมต่อทุกแผนกเข้าด้วยกันอย่างแม่นยำ
+
+โครงสร้างระบบถูกออกแบบให้รองรับสเกลระดับ Enterprise ทั้งระบบคลังสินค้าหลายสาขา (Multi-Warehouse, Goods Receipts, Cycle Count), ระบบแคชเชียร์หน้าร้าน (POS Shifts & Cash Drawer), ระบบวางแผนการผลิต (MRP, Work Orders, Bill of Materials - BOM), ระบบบัญชีครบวงจร (งบดุล, กระแสเงินสด, ภาษีหัก ณ ที่จ่าย, ใบกำกับภาษี) และระบบบริหารงานบุคคล (Attendance, Leaves, Payroll)`,
+    category: 'saas-booking',
+    categoryLabel: 'SaaS & Enterprise Solutions',
+    priceStandardTHB: 39000,
+    priceStandardUSD: 1190,
+    priceExtendedTHB: 79900,
+    priceExtendedUSD: 2390,
+    status: 'available',
+    isFeatured: true,
+    isNew: true,
+    version: '2.4.0 (Enterprise)',
+    framework: 'Next.js 15 + React 19 + TypeScript',
+    rating: 5.0,
+    reviewsCount: 19,
+    salesCount: 12,
+    thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80'
+    ],
+    demoUrl: 'https://erp.primenexttech.solutions',
+    keyFeatures: [
+      '🏪 Smart POS & Shifts: ระบบแคชเชียร์หน้าร้าน คุมกะเงินสด พิมพ์ใบเสร็จ/บาร์โค้ด และรองรับ Online Orders',
+      '📦 Multi-Warehouse Inventory: คลังสินค้าหลายสาขา, โอนย้ายสต็อก, ปรับยอด, ตรวจนับ Cycle Count และแจ้งเตือนสต็อกต่ำ/หมดอายุ',
+      '🏭 Manufacturing & MRP: วางแผนความต้องการวัสดุ, สูตรการผลิต (BOM), ใบสั่งผลิต (Work Orders) และบันทึกของเสีย (Scrap)',
+      '📑 Complete Accounting Hub: งบดุล, งบทดลอง, กระแสเงินสด, ภาษีหัก ณ ที่จ่าย และใบกำกับภาษีเต็มรูป',
+      '👥 HRM & Payroll: บันทึกเวลาทำงาน (Attendance), จัดการวันลา (Leaves) และระบบคำนวณเงินเดือนพนักงาน',
+      '📊 Real-time Executive Dashboard: กราฟวิเคราะห์รายรับ-รายจ่าย สรุปกำไรขาดทุน (P&L) แบบเรียลไทม์',
+      '🔒 Enterprise Security & RBAC: กำหนดสิทธิ์การเข้าถึงเมนูตามตำแหน่งพนักงานอย่างละเอียด'
+    ],
+    techStack: [
+      { name: 'Next.js 15', category: 'Frontend', badgeColor: 'bg-black text-white' },
+      { name: 'React 19', category: 'Frontend', badgeColor: 'bg-cyan-900/60 text-cyan-300' },
+      { name: 'TypeScript', category: 'Frontend', badgeColor: 'bg-blue-900/60 text-blue-300' },
+      { name: 'Tailwind CSS', category: 'Styling', badgeColor: 'bg-teal-900/60 text-teal-300' },
+      { name: 'PostgreSQL / Supabase', category: 'Database', badgeColor: 'bg-emerald-900/60 text-emerald-300' },
+      { name: 'Recharts Analytics', category: 'Frontend', badgeColor: 'bg-amber-900/60 text-amber-300' }
+    ],
+    includedItems: [
+      'Full Clean Source Code (Next.js 15 + React 19 + TypeScript)',
+      'Complete Production Database Schema & Migration SQL',
+      'Architecture Design & Enterprise Deployment Guide',
+      'Single Organization Commercial License Protection',
+      'Free Minor Version Updates'
+    ],
+    databaseSchemaInfo: [
+      'Core Tables: Users, Roles, Permissions, Stores, Warehouses, Billers',
+      'Inventory: Products, Categories, Brands, Units, Variants, Stock, Cycle Counts, Goods Receipts',
+      'Sales & POS: POS Shifts, Orders, Sales Transactions, Quotations, Invoices, Billing Notes, AR Aging',
+      'Purchasing: Suppliers, Purchase Orders, Goods Received, Purchase Returns',
+      'Manufacturing: MRP Plans, Work Orders, Bill of Materials (BOM), Scrap & Recycling',
+      'Accounting: General Ledger, Balance Sheet, Cash Flow, Withholding Tax (ภ.ง.ด.), Tax Invoices',
+      'HRM: Employees, Departments, Attendance Logs, Leave Requests, Payroll Slips'
+    ],
+    requirements: [
+      'Node.js 18.17+ or 20+ LTS / Node 22',
+      'PostgreSQL 14+ / Supabase or MySQL 8.0+',
+      'Modern Browser with JavaScript enabled'
+    ],
+    lastUpdated: 'มีนาคม 2026'
+  },
+  {
     id: 'car2hand',
     slug: 'car2hand',
     title: 'Car2Hand - Used Car Marketplace & Automotive Sales Platform',
